@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PARSE_JSON_TABLE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO DATA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2s-rj-rZm">
+                                <rect key="frame" x="103.5" y="401.5" width="207" height="103.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K2s-rj-rZm" secondAttribute="height" multiplier="2" id="4ye-OF-4GY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7t6-OX-hWI">
+                                <rect key="frame" x="0.0" y="80" width="414" height="746"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="kbi-Fh-NBB">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7t6-OX-hWI" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-150" id="4wC-aS-AbU"/>
+                            <constraint firstItem="7t6-OX-hWI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="DCS-Wl-wbk"/>
+                            <constraint firstItem="7t6-OX-hWI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="VUV-M9-NcE"/>
+                            <constraint firstItem="K2s-rj-rZm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="YzR-5N-Uxc"/>
+                            <constraint firstItem="7t6-OX-hWI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u3e-8j-xpA"/>
+                            <constraint firstItem="K2s-rj-rZm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="v6Z-sG-ukb"/>
+                            <constraint firstItem="K2s-rj-rZm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yX8-HA-EdS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblNodata" destination="K2s-rj-rZm" id="A7Q-cf-zQu"/>
+                        <outlet property="tblData" destination="7t6-OX-hWI" id="obW-wi-zIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
